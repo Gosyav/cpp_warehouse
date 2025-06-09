@@ -1,0 +1,25 @@
+{
+  "name": "Ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.autoSave": "onFocusChange",
+        "files.insertFinalNewline": true
+      },
+      "extensions": [
+        "matepek.vscode-catch2-test-adapter",
+        "ms-vscode.cpptools-themes",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-vscode.cmake-tools",
+        "webfreak.debug"
+      ]
+    }
+  },
+  "remoteUser": "root",
+  "workspaceFolder": "${localWorkspaceFolder}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind,consistency=cached"
+}
